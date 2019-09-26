@@ -1,4 +1,3 @@
-
 /**
  * Given an array of integers Find the mean, median, mode, standard deviation
  * and variance.
