@@ -1,0 +1,2 @@
+John is connected to Bryant,Debra,Walter
+Mercedes is connected to Walter,Robin,Bryant
