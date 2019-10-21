@@ -2,7 +2,7 @@
  * Given "a" an integer or float value, and b as an integer value, 
  * Find a power b.
  *
- * @author Siva Sankar
+ * @author Siva Sankar and aiswarya
  */
 
 import java.util.*;

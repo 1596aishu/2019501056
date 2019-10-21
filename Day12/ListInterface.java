@@ -1,7 +1,7 @@
 /**
  * This acts as an interface (API) for the client.
  * 
- * @author Siva Sankar
+ * @author Siva Sankar and aiswarya
  */
 
 public interface ListInterface {
