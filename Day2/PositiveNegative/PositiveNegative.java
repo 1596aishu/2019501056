@@ -9,7 +9,7 @@
  * Input : posNeg(-4, -5, false)
  * Output : false
  * 
- * @author Siva Sankar
+ * @author Siva Sankar and aiswarya
  */
 
  public class PositiveNegative {
@@ -26,7 +26,7 @@
     public static boolean posNeg(int a, int b, boolean negative) {
         // Your code goes here....
         if (negative){
-            if (a<0 && b<0){
+            if (a < 0 && b < 0){
                 return true;
             }
             else{
@@ -34,7 +34,7 @@
             }
         }
         else{
-            if (a<0 && b<0){
+            if (a < 0 && b < 0){
                 return false;
             }
             else{

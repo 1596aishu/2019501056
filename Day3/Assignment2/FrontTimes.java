@@ -12,7 +12,8 @@
  * Input : frontTimes("Abc", 3)
  * Output : AbcAbcAbc
  * 
- * @author: Siva Sankar
+ * @author: Siva Sankar and aiswarya
+ * 
  */
 
 public class FrontTimes {

@@ -11,7 +11,7 @@
  * Input : loneTeen(13, 13)
  * Output : false
  * 
- * @author Siva Sankar
+ * @author Siva Sankar and aiswarya
  */
 
 public class LoneTeen {

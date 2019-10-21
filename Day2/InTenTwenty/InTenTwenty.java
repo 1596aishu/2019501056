@@ -10,7 +10,7 @@
  * Input : in1020(8, 99)
  * Output : false
  * 
- * @author Siva Sankar
+ * @author Siva Sankar and aiswarya
  */
 
  public class InTenTwenty {
@@ -27,7 +27,7 @@
      */
     public static boolean in1020(int a, int b) {
         // Your code goes here....
-        if ((a>=10 && a<=20) || (b>=10 && b<=20))
+        if ((a >= 10 && a <= 20) || (b >= 10 && b<=20))
         {
             return true;
         }

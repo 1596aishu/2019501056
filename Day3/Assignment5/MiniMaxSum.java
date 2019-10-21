@@ -9,7 +9,7 @@
  * Input : {1,2}
  * Output : 2,1
  * 
- * @author Siva Sankar
+ * @author Siva Sankar and aiswarya
  */
 
 public class MiniMaxSum {

@@ -11,7 +11,7 @@
  * Input : hasTeen(20, 10, 13)
  * Output : true
  * 
- * @author Siva Sankar
+ * @author Siva Sankar and aiswarya
  */
 
  public class HasTeen {
@@ -35,11 +35,11 @@
         }
         else
         { 
-            if (13<=b&&b<=19)
+            if (13<=b && b<=19)
             {
                 return true;
             }
-            if (13<=c&&c<=19)
+            if (13<=c && c<=19)
             {
                 return true;
             }

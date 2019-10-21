@@ -1,0 +1,7 @@
+Look for the comments in the "Resize the list" in List.java
+
+Once you are done writing the code for resize() method, run the following command.
+    java MysteriousClient
+
+You can use the code that you have written in the Assignment 2 in this
+module

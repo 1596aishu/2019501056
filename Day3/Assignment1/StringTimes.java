@@ -7,7 +7,7 @@
  * 
  * You can see the more test cases in the JUnit.java file.
  * 
- * @author Siva Sankar
+ * @author Siva Sankar and aiswarya
  */
 
 public class StringTimes {

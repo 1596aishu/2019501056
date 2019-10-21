@@ -22,7 +22,7 @@
  * Input : [1,2,3,4,5]
  * Output : 1.41421356
  * 
- * @author Siva Sankar
+ * @author Siva Sankar and aiswarya
  */
 
 import java.util.*;

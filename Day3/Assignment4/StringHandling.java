@@ -5,7 +5,7 @@
  * Input : {"Hello", "Hi"}
  * Output : {"hello", "hi"}
  * 
- * @author Siva Sankar
+ * @author Siva Sankar and aiswarya
  */
 
 public class StringHandling {

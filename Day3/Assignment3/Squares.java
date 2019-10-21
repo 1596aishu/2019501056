@@ -5,7 +5,7 @@
  * Input : {1, 2, 3}
  * Output : {1, 4, 9}
  * 
- * @author Siva Sankar
+ * @author Siva Sankar and aiswarya
  * @author Mayank
  */
 

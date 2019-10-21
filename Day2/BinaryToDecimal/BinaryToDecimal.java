@@ -8,7 +8,7 @@
  * Input : 000000000000001010
  * Output : 10
  * 
- * @author Siva Sankar
+ * @author Siva Sankar and aishwarya
  */
 
 public class BinaryToDecimal {

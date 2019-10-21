@@ -1,0 +1,6 @@
+class play{
+    char[] word;
+    movies[] movie;
+    user[] player;
+    
+}

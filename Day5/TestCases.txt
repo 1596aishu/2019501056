@@ -1,0 +1,80 @@
+Following are the sample test cases for the ToDo List.
+
+1. You can add task to your ToDo List
+    Add : Task 1:
+        Name : Module 5 Assignment 1
+        Description : Need to finish ToDoList Assignment.
+        Due Date : 24/09/2019
+        Status : incomplete
+    Add : Task 2:
+        Name : Module 5 Assignment 1 Date Objects
+        Description : Understand how Date should be handled.
+        Due Date : 23/09/2019
+        Status : incomplete
+    Add : Task 3:
+        Name : Module 4 Assignment 1 Library Card Catalog
+        Description : Understand how array of objects to be handled.
+        Due Date : 23/09/2019
+        Status : in process
+    Add : Task 4:
+        Name : Dummy Task
+        Description : Task Description
+        Due Date : 11/11/2019
+        Status : incomplete
+
+2. You can remove task from your ToDo List
+    Input : Task to be removed based on Name : Dummy Task
+    Output : Task removed...... with the name Dummy Task
+
+3. You can update the status of the task. (Mark the task as complete, in progress or incomplete)
+    Search for the task based on Name and update the status.
+    Input: Module 5 Assignment 1 Date Objects
+    Output : complete
+
+4. You can display all the pending / incomplete tasks from your ToDo List.
+    Task 1:
+        Name : Module 5 Assignment 1
+        Description : Need to finish ToDoList Assignment.
+        Due Date : 24/09/2019
+        Status : incomplete
+    Task 3:
+        Name : Module 4 Assignment 1 Library Card Catalog
+        Description : Understand how array of objects to be handled.
+        Due Date : 23/09/2019
+        Status : in process
+    
+5. You can display all the tasks based on a particular date
+    Input Date : 23/09/2019
+    Output : Task 3:
+        Name : Module 4 Assignment 1 Library Card Catalog
+        Description : Understand how array of objects to be handled.
+        Due Date : 23/09/2019
+        Status : in process
+
+6. You can find a task based on the task name.
+    Input : Module 4 Assignment 1 Library Card Catalog
+    Output : 
+        Name : Module 4 Assignment 1 Library Card Catalog
+        Description : Understand how array of objects to be handled.
+        Due Date : 23/09/2019
+        Status : in process
+
+7. You can get all the overdue tasks.
+    Output : None of the tasks are overdue
+
+8. You can also display all the tasks.
+    Task 1:
+        Name : Module 5 Assignment 1
+        Description : Need to finish ToDoList Assignment.
+        Due Date : 24/09/2019
+        Status : incomplete
+    Task 2:
+        Name : Module 5 Assignment 1 Date Objects
+        Description : Understand how Date should be handled.
+        Due Date : 23/09/2019
+        Status : incomplete
+    Task 3:
+        Name : Module 4 Assignment 1 Library Card Catalog
+        Description : Understand how array of objects to be handled.
+        Due Date : 23/09/2019
+        Status : in process

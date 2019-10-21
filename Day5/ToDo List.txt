@@ -1,0 +1,61 @@
+Problem Set - 1 : ToDo Lists
+
+Rubric
+This assignment is designed to reinforce your understanding of the following:
+1. Core Elements such as Data Types, Variables, Branching, Iterations, Arrays etc.
+2. Identify Objects, Its properties and behaviours.
+3. Problem decomposition. Identifying the tiny objects and separating them from the main logic.
+3. Use of Java API for handling Date related queries.
+
+Of course you are maintaining the list of tasks that you have to complete by 
+the end of the day or week or month or so. For that you need to maintain the 
+list of tasks and whenever you refer to it, you will get reminded of that, 
+otherwise you may be forgetting some of the tasks you have to perform. And you 
+should automate this process so that the program will remind you which tasks are 
+in pending.
+
+Implement the ToDo List based on the following.
+
+The ToDo List contains the list of tasks. Each task has the task name,
+task description, due date, status of each task.
+
+1. You can add task to your ToDo List
+2. You can remove task from your ToDo List
+3. You can update the status of the task. (Mark the task as complete, in progress or incomplete)
+4. You can display all the pending / incomplete tasks from your ToDo List.
+5. You can display all the tasks based on a particular date
+6. You can find a task based on the task name.
+7. You can get all the overdue tasks.
+8. You can also display all the tasks.
+
+And you can add more functionality to your ToDo list if you find it useful.
+
+Hints: To handle the Date, you can use the following Java API:
+1. SimpleDateFormat which is available in java.text 
+2. Date which is available in java.util
+
+
+Here is an example of getting the date.
+Example : 1
+// Uses the Date API
+Date date = new Date();
+
+// Uses the SimpleDateFormat to format the Date to dd/MM/yyyy
+SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+
+// Getting the Date in the form of a String
+String strDate= formatter.format(date);
+System.out.println(strDate);
+
+
+
+Example 2:
+//  Creating the formatter object based on dd/MM/yyyy
+SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+
+//  Creating the date object based on specific date using SimpleDateFormat object.
+Date date = formatter.parse("31/03/2015");
+
+//  Converting the date to the required format.
+String strDate = formatter.format(date);
+System.out.println("Date is: "+strDate);

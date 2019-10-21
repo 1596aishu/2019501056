@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - randomread",
+            "request": "launch",
+            "mainClass": "randomread",
+            "projectName": "HangMan_36b8fac8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FileReaderExample",
+            "request": "launch",
+            "mainClass": "FileReaderExample",
+            "projectName": "HangMan_36b8fac8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - random",
+            "request": "launch",
+            "mainClass": "random",
+            "projectName": "HangMan_36b8fac8"
+        }
+    ]
+}
