@@ -107,7 +107,7 @@ public class List {
     public void add(int item) {
         //Inserts the specified element at the end of the list.
         //  Your code goes here.....
-        intList[this.size()] = item;
+        intList[size] = item;
         size += 1;
     }
 

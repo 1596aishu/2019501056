@@ -14,7 +14,7 @@
  *      Search for a contact based on name of the contact and delete from the 
  *      ContactManager list.
  * 
- * @author Siva Sankar
+ * @author Siva Sankar and aiswarya
  */
 
 class ContactsManager {
