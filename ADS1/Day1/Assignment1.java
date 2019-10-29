@@ -1,8 +1,9 @@
+import java.util.Arrays;
 class Assignment1{
     public static int binarySearch(int[] a, int b){
         int low = 0, high = a.length -1;
         while(low<=high){
-            int mid = low +(low+high) /2;
+            int mid = (low + high) /2;
             if(b<a[mid]){
                 high = mid-1;
             }
@@ -20,22 +21,21 @@ class Assignment1{
 
     public static void main(String[] args){
         int a[] = {30, -40, -20, -10, 40, 0, 10, 5};
-        int n = a.length;  
-        int temp = 0, count = 0;
-        for(int i=0; i < n; i++){
-            for(int j=1; j < (n-i); j++){
-                if(a[j-1] > a[j])
-				{   
-				    temp = a[j-1];  
-					a[j-1] = a[j];  
-					a[j] = temp;  
+        int n = a.length;
+        Arrays.sort(a);
+        for(int k = 0;k<n;k++)
+            System.out.print(a[k]+" , ");
+        int count = 0;
+        for (int i = 0; i < n; i++) {
+            for (int j = i; j < n; j++) {
+                int key = -(a[i] + a[j]);
+                int x = binarySearch(a, key);
+                if (x != -1 && a[i] < a[j] && a[j] < a[x]) {
+                    count += 1;
                 }
-                int key = -(a[i]+a[j]);	
-                binarySearch(a,key);
-                if(key!= -1  && a[i]<a[j] && a[j]<a[key])
-                    count++;
             }
         }
-        System.out.println(count);
+        System.out.println("The number of pairs are : "+ count);
     }
 }
+
