@@ -4,14 +4,14 @@ You have a cricket team information and you need to sort them based on certain c
 
 Assuming that each Team name is unique, you have to form a leader board
 
-For example
+For example,
 
-TeamName #Wins #Losses #Draws
+TeamName 	#Wins 	#Losses 	#Draws
 
 England 	4 	2 		3
 India 		5 	2 		4
 Australia 	6 	2 		3
-SouthAfrica 5 	3 		4
+SouthAfrica 	5 	3 		4
 Bangladesh 	3 	4 		2
 Zimbabwe 	3 	4 		6
 Ireland 	3 	4 		1

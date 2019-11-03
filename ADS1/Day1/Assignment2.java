@@ -1,3 +1,12 @@
+//@auther aiswarya
+
+/**
+	 
+	 * @param a is the first integer array
+	 * @param b is the second integer array
+*/
+	
+
 import java.util.Arrays;
 class Assignment2{
     public static void main(String[] args){

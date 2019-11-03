@@ -1,3 +1,15 @@
+//@auther aiswarya
+
+/**
+	 
+	 * @param a is the integer array
+	 * @param b is the element to be searched
+	 * @param low lower index
+	 * @param mid middle index
+	 * @param high higher index
+	 */
+	
+
 import java.util.Arrays;
 class Assignment1{
     public static int binarySearch(int[] a, int b){

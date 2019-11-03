@@ -1,6 +1,6 @@
 import java.lang.Comparable;
 import java.util.*;
-// @ author aiswarya
+// @author aiswarya
 
 import java.util.Arrays;
 class Solutions{

@@ -1,37 +1,57 @@
-//@ author harika
+//@authwer aiswarya
 
-class Solution {
-	public static String Josephus(int a, int b) {
-		// fill you code Here
-		circularDouble cdll = new circularDouble();
-		/// we have head = null
-		/// tail = null
-		for (int i = 0; i < a; i++) {
-			cdll.add(i);
-		}
-
-		cdll.formCircle();
-		int pos = 1;
-		Node temp = cdll.head;
-		int eliminated = 0;
-		String toReturn = "";
-		while (eliminated != a) {
-			temp = temp.next;
-			pos++;
-			if (pos == b) {
-				pos = 1;
-				toReturn += temp.value + " ";
-				Node prevNode = temp.prev;
-				Node nextNode = temp.next;
-
-				prevNode.next = nextNode;
-				nextNode.prev = prevNode;
-
-				eliminated++;
-				temp = temp.next;
+class Solution{
+	public Team[] sort(Team[] teams){
+		// your code goes here
+		for (int i = 0; i < (teams.length)-1; i++) {
+			int min = i;
+			for (int j = i + 1; j < teams.length; j++) {
+				if (teams[j].compareTo(teams[min]) == 1) {
+					min = j;
+				}
 			}
+				Team temp = teams[min];
+				teams[min] = teams[i];
+				teams[i] = temp;
+			
 		}
-		return toReturn.trim();
-
+		return teams;
+	}
+}
+class Team implements Comparable<Team> {
+	String teamName;
+	int noOfWins;
+	int noOfLosses;
+	int noOfDraws;
+	Team(String name, int wins, int losses, int draws){
+		teamName = name;
+		noOfDraws = draws;
+		noOfWins = wins;
+		noOfLosses = losses;
+	}
+	public String toString(){
+		//retrun all the attributes as a string but appending with ", "
+        return "";
+	}
+	public int compareTo(Team team) {
+		if (this.noOfWins > team.noOfWins)
+		return 1;
+		else if (this.noOfWins < team.noOfWins) {
+			return -1;
+		}
+		else {
+			if (this.noOfLosses > team.noOfLosses)
+				return 1;
+			else if (this.noOfLosses < team.noOfLosses) {
+				return -1;
+			}
+			else {
+				if (this.noOfDraws > team.noOfDraws)
+					return 1;
+				else if (this.noOfDraws < team.noOfDraws) {
+					return -1;
+				}
+			}
+		}return 0;
 	}
 }
