@@ -8,7 +8,7 @@ class Solution{
 			for (int j = i + 1; j < teams.length; j++) {
 				if (teams[j].compareTo(teams[min]) == 1) {
 					min = j;
-				}
+				} 
 			}
 				Team temp = teams[min];
 				teams[min] = teams[i];
