@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - quicksort",
+            "request": "launch",
+            "mainClass": "quicksort",
+            "projectName": "Day4_7f7dd1c6"
+        }
+    ]
+}
