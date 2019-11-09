@@ -79,15 +79,15 @@ class DynamicMedian {
         double[] median = new double[arr.length];
         
 		for(int i = 0; i < arr.length; i++){
-			if (arr[i] > med) {
+			if (arr[i] >= med) {
 				Dm.insertAtMin(arr[i]);
 			}
 			else if (arr[i] < med) {
 				Dm.insertAtMax(arr[i]);
 			} 
-			else {
-				Dm.insertAtMin(arr[i]);
-			}
+			// else {
+			// 	Dm.insertAtMin(arr[i]);
+			// }
 			if (Dm.getMinSize() - Dm.getMaxSize() > 1) {
 				Dm.insertAtMax(Dm.delMin());
 			}

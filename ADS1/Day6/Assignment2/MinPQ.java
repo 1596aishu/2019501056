@@ -5,7 +5,7 @@ import java.util.NoSuchElementException;
 /**
  *  
  *  @author Robert Sedgewick
- *  @author Harika
+ *  @author aiswarya
  *
  *  @param <Key> the generic type of key on this priority queue
  */
@@ -17,10 +17,10 @@ public class MinPQ<Key> implements Iterable<Key> {
     /**
      * Initializes an empty priority queue with the given initial capacity.
      *
-     * @param  initCapacity the initial capacity of this priority queue
+     * @param  Capacity the initial capacity of this priority queue
      */
-    public MinPQ(int initCapacity) {
-        pq = (Key[]) new Object[initCapacity + 1];
+    public MinPQ(int Capacity) {
+        pq = (Key[]) new Object[Capacity + 1];
         n = 0;
     }
 
@@ -35,12 +35,12 @@ public class MinPQ<Key> implements Iterable<Key> {
      * Initializes an empty priority queue with the given initial capacity,
      * using the given comparator.
      *
-     * @param  initCapacity the initial capacity of this priority queue
+     * @param  Capacity the initial capacity of this priority queue
      * @param  comparator the order in which to compare the keys
      */
-    public MinPQ(int initCapacity, Comparator<Key> comparator) {
+    public MinPQ(int Capacity, Comparator<Key> comparator) {
         this.comparator = comparator;
-        pq = (Key[]) new Object[initCapacity + 1];
+        pq = (Key[]) new Object[Capacity + 1];
         n = 0;
     }
 
@@ -71,7 +71,7 @@ public class MinPQ<Key> implements Iterable<Key> {
     /**
      * Returns true if this priority queue is empty.
      *
-     * @return tru if this priority queue is empty;
+     * @return true if this priority queue is empty;
      *         else false
      */
     public boolean isEmpty() {
@@ -89,7 +89,6 @@ public class MinPQ<Key> implements Iterable<Key> {
      * @return a smallest key on this priority queue
      */
     public Key min() {
-        if (isEmpty()) throw new NoSuchElementException("Priority queue underflow");
         return pq[1];
     }
 
@@ -123,7 +122,6 @@ public class MinPQ<Key> implements Iterable<Key> {
      * @throws NoSuchElementException if this priority queue is empty
      */
     public Key delMin() {
-        if (isEmpty()) throw new NoSuchElementException("Priority queue underflow");
         Key min = pq[1];
         exch(1, n--);
         sink(1);
@@ -134,10 +132,7 @@ public class MinPQ<Key> implements Iterable<Key> {
     }
 
 
-   /** 
-    * Helper functions to restore the heap invariant.
-    */
-
+   
     private void swim(int k) {
         while (k > 1 && greater(k/2, k)) {
             exch(k, k/2);
@@ -155,9 +150,6 @@ public class MinPQ<Key> implements Iterable<Key> {
         }
     }
 
-   /**
-    * Helper functions for compares and swaps.
-    */
     private boolean greater(int i, int j) {
         if (comparator == null) {
             return ((Comparable<Key>) pq[i]).compareTo(pq[j]) > 0;
@@ -173,7 +165,6 @@ public class MinPQ<Key> implements Iterable<Key> {
         pq[j] = swap;
     }
 
-    // is pq[1..n] a min heap?
     private boolean isMinHeap() {
         for (int i = 1; i <= n; i++) {
             if (pq[i] == null) return false;
@@ -185,7 +176,6 @@ public class MinPQ<Key> implements Iterable<Key> {
         return isMinHeapOrdered(1);
     }
 
-    // is subtree of pq[1..n] rooted at k a min heap?
     private boolean isMinHeapOrdered(int k) {
         if (k > n) return true;
         int left = 2*k;
