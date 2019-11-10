@@ -1,6 +1,6 @@
 import java.util.*;
 /**
- *  @author--Aiswarya
+ *  @author Aiswarya
  */
 public class Queue<Item> implements Iterable<Item> {
     private Node<Item> first;    // beginning of queue
