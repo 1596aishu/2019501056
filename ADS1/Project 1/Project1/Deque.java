@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Deque<Item> implements Iterable<Item> {
     private Node<Item> first;    // beginning of queue

@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class RandomisedQueue<Item> implements Iterable<Item> {
+public class RandomizedQueue<Item> implements Iterable<Item> {
     private Node<Item> first;    // beginning of queue
     private Node<Item> last;     // end of queue
     private int n;               // number of elements in queue
@@ -11,24 +11,24 @@ public class RandomisedQueue<Item> implements Iterable<Item> {
         private Node<Item> prev;
     }
     // construct an empty deque
-    public RandomisedQueue(){
+    public RandomizedQueue() {
         first = null;
         last  = null;
         n = 0;
     }
 
     // is the deque empty?
-    public boolean isEmpty(){
+    public boolean isEmpty() {
         return first == null;
     }
 
     // return the number of items on the deque
-    public int size(){
+    public int size() {
         return n;
     }
 
     // add the item
-    public void enqueue(Item item){
+    public void enqueue(Item item) {
         Node<Item> newitem = new Node<Item>();
         if(isEmpty()) first = newitem;
         else last.next = newitem;
@@ -37,15 +37,15 @@ public class RandomisedQueue<Item> implements Iterable<Item> {
         newitem.prev = last;
         last = newitem;
         n++;
-        System.out.println(last.item);
+        // System.out.println(last.item);
     }
 
     // remove and return a random item
-    public Item dequeue(){
+    public Item dequeue() {
         int i = 0;
         int x = random(0,n);
         Node<Item> current = first;
-        if(i != x){
+        if(i != x) {
             current = current.next;
             i++;
         }
@@ -58,22 +58,23 @@ public class RandomisedQueue<Item> implements Iterable<Item> {
     }
 
     //generates the random index
-    public int random(int max, int min){
-        int num = (int)(Math.random()*(max-min)+min);
-        System.out.println(num);
+    private int random(int max, int min) {
+        int num = (int)(Math.random()*(max-min) + min);
+        // System.out.println(num);
         return num;
     }
     // return a random item (but do not remove it)
-    // public Item sample(){
-
-    // }
+    public Item sample() {
+        Item item = first.item;
+        return item;
+    }
 
     // Method for forward traversal
-    public void displayForward(){
+    private void displayForward() {
         Node<Item> current = first;
-        while(current != null){
-            for(int i=0; i<n;i++){
-                System.out.print(current.item + " ");
+        while(current != null) {
+            for(int i=0; i<n;i++) {
+                // System.out.print(current.item + " ");
                 current = current.next;
             }        
         }
@@ -91,7 +92,7 @@ public class RandomisedQueue<Item> implements Iterable<Item> {
     // }
 
     // return an iterator over items in order from front to back
-    public Iterator<Item> iterator(){
+    public Iterator<Item> iterator() {
         return new QIterator(first);  
     }
 
@@ -119,8 +120,8 @@ public class RandomisedQueue<Item> implements Iterable<Item> {
     }
 
     // unit testing (required)
-    public static void main(String[] args){
-        RandomisedQueue deque = new RandomisedQueue();
+    public static void main(String[] args) {
+        RandomizedQueue<Integer> deque = new RandomizedQueue<Integer>();
         deque.enqueue(2);  
         deque.enqueue(1);
         deque.enqueue(3);
