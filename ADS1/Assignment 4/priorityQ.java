@@ -7,7 +7,7 @@ import java.util.NoSuchElementException;
 /**
  *  
  *  @author aiswarya
- *
+ *  Complexity is NlogN
  *  @param <Key> the generic type of key on this priority queue
  */
 public class priorityQ<Key> implements Iterable<Key> {
@@ -120,8 +120,7 @@ public class priorityQ<Key> implements Iterable<Key> {
     }
 
     /**
-     * @return a smallest key on this priority queue
-     * @throws NoSuchElementException if this priority queue is empty
+     * @return a smallest key on this priority queue.
      */
     public Key delMin() {
         Key min = pq[1];
