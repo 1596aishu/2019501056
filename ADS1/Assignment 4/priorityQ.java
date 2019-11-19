@@ -7,7 +7,7 @@ import java.util.NoSuchElementException;
 /**
  *  
  *  @author aiswarya
- *  Complexity is NlogN
+ *  Complexity is Nlogk
  *  @param <Key> the generic type of key on this priority queue
  */
 public class priorityQ<Key> implements Iterable<Key> {
