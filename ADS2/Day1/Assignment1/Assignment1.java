@@ -1,6 +1,7 @@
 import java.io.*;  
 
 class Assignment1{
+    String[] str;
     public static void main(String args[]) throws Exception{ 
         Assignment1 as = new Assignment1();
         String synsets = "C:\\Users\\aishwarya\\Desktop\\2019501056\\ADS2\\Day1\\Assignment1\\wordNet\\synsets.txt";
@@ -13,7 +14,7 @@ class Assignment1{
             FileReader fr = new FileReader(file);    
             BufferedReader br = new BufferedReader(fr);
             String j;
-            String[] str = new String[100];
+            // String[] str = new String[100];
             String[] key = new String[100];
             String[] val = new String[100];
             int c = 0;
@@ -39,17 +40,18 @@ class Assignment1{
         FileReader fr = new FileReader(file);    
         BufferedReader br = new BufferedReader(fr);
         String j;
-        int c = 0;
-        String[] str = new String[100];
+        int c = 0;        
         while((j = br.readLine())!=null){
             int i = 0;
             if(c<5){
-                System.out.println(j);
+                // System.out.println(j);
                 str = j.split(",",2);
+                for (int a = 0; a<str.length;a+=2)
+                    for (int b = 1 ; b<str.length;b+=2) 
+                        System.out.println(str[a]+" : "+ str[b]);
             } c=c+1;
         }
-        for (int a = 0; a<str.length;a++) 
-            System.out.print(str[a]);
+        
         fr.close();    
     }
 }
