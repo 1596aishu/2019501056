@@ -3,6 +3,7 @@ import java.io.*;
 class Assignment1{
     String[] str;
     public static void main(String args[]) throws Exception{ 
+        //defines files and calls the methods
         Assignment1 as = new Assignment1();
         String synsets = "C:\\Users\\aishwarya\\Desktop\\2019501056\\ADS2\\Day1\\Assignment1\\wordNet\\synsets.txt";
         String hypernyms = "C:\\Users\\aishwarya\\Desktop\\2019501056\\ADS2\\Day1\\Assignment1\\wordNet\\hypernyms.txt";
@@ -10,7 +11,8 @@ class Assignment1{
         as.hypernyms_file(hypernyms);
     }
 
-    private void synsets_file(String file) throws Exception{        
+    private void synsets_file(String file) throws Exception{ 
+        //uses the key value method after splitting each line.       
             FileReader fr = new FileReader(file);    
             BufferedReader br = new BufferedReader(fr);
             String j;
@@ -37,6 +39,7 @@ class Assignment1{
         } 
         
     private void hypernyms_file(String file) throws Exception{
+        //
         FileReader fr = new FileReader(file);    
         BufferedReader br = new BufferedReader(fr);
         String j;
