@@ -21,9 +21,16 @@ public class Hypernym_file{
                 }
             }
         }
-        System.out.print("Edges : " + c);    
+            In in = new In("C:\\Users\\aishwarya\\Desktop\\2019501056\\ADS2\\Day1\\Assignment1\\wordNet\\digraph1.txt");
+            Digraph G = new Digraph(in);
+            SAP sap = new SAP(G);
+            System.out.println(sap.length(3,11) + " : " + sap.ancestor(3,11));
+            // System.out.println(sap.length(3,4) + " : " + sap.ancestor(3,4));
+            // System.out.println(sap.length(5,6) + " : " + sap.ancestor(5,6));
+            // System.out.println(sap.length(7,8) + " : " + sap.ancestor(7,8));
+    
     }
-
+    
     public void Hypernyms(String file) throws Exception {
                 
         FileReader fr = new FileReader(file);
@@ -42,6 +49,6 @@ public class Hypernym_file{
                     val.add(null);
                 }
         }
-        System.out.println("Vertices : "+ c);            
+        // System.out.println("Vertices : "+ c);            
     }
 }
