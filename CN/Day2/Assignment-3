@@ -1,0 +1,24 @@
+BGP --> TCP protocol
+DHCP --> UDP protocol
+DNS --> UDP for larger packets and TCP otherwise.
+FTP --> TCP
+HTTP --> TCP 
+HTTPS --> TCP and UDP
+IMAP --> TCP
+LDAP --> TCP and UDP
+MGCP --> TCP and UDP
+MQTT --> TCP
+NNTP --> TCP and UDP
+NTP --> TCP and UDP
+POP --> TCP
+ONC/RPC --> UDP
+RTSP --> TCP and UDP
+RTP --> UDP and TCP
+RIP --> UDP
+SIP --> TCP and UDP
+SMTP --> TCP
+SNMP -->UDP
+SSH --> UDP encapsulated with TCP
+Telnet --> TCP
+TLS/SSL --> TCP and UDP
+XMPP --> TCP
