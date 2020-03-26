@@ -30,8 +30,7 @@ public class Solution{
         int[] arr2 = new int[100];
         int[] arr3 = new int[100];
         while (sc.hasNextLine()){ 
-            String s = new String();
-            s = sc.nextLine();
+            String s = sc.nextLine();
             if(j==0){
                 String[] arr4 = s.split(" ");
                 size = Integer.parseInt(arr4[1]);
