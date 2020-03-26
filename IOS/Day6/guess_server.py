@@ -9,7 +9,7 @@ host = '127.0.0.1'
 port = 10002
 sock.bind((host,port))
 sock.listen()
-num = random.randint(1,50)
+num = random.triangular(1,50)
 conn,addr = sock.accept()
 print('connected by' , addr)
 conn.recv(1024).decode()
