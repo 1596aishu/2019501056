@@ -23,4 +23,3 @@ while True:
     elif(data == num):        
         conn.sendall(b'Correct! ')
         break
-    
